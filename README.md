@@ -1,4 +1,4 @@
-This is code for tutorial in my blog post [Create Contact form with react and php](http://blog.malith.pro/how-to-create-a-contact-form-with-react-js-and-php/).
+This is code for tutorial in my blog post [Create Contact form with react and php](https://blog.bitsrc.io/how-to-build-a-contact-form-with-react-js-and-php-d5977c17fec0).
 
 ## How to start
 
