@@ -14,3 +14,9 @@ You will also see any lint errors in the console.
 
 
 ![Alt text](/screenshot.png?raw=true "Screenshot")
+
+
+
+<div align="center">
+    <a href="https://www.paypal.me/craftcode"><img alt="Header" src="https://cdn-images-1.medium.com/max/806/1*G95uyokAH4JC5Ppvx4LmoQ.png" width="40%"></a>
+</div>
