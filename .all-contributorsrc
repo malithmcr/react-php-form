@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "malithmcr",
+      "name": "Malith Priyashan",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4549859?v=4",
+      "profile": "https://craftcode.design/",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "react-php-contact-form",
+  "projectOwner": "malithmcr",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
