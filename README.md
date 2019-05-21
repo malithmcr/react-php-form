@@ -5,6 +5,10 @@ This is code for tutorial in my blog post [Create Contact form with react and ph
 
 In the project directory, you can run:
 
+### `npm install`
+
+please go to the root fo the project and run npm install to install all the nessery npm modules.
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
@@ -14,7 +18,9 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 
-![Alt text](/screenshot.png?raw=true "Screenshot")
+<div align="center">
+    <a href="https://www.paypal.me/craftcode"><img alt="Header" src="/screenshot.png?raw=true" width="80%"></a>
+</div>
 
 
 

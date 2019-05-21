@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 
-const API_PATH = 'http://localhost:1992/react-contact-form/api/contact/index.php';
+const API_PATH = process.env.REACT_APP_API;
 
 class App extends Component {
   constructor(props) {
