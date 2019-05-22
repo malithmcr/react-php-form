@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Form from '../src/components/Form';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const config = {
+  api: `${process.env.REACT_APP_API}`,
+  title: 'Contact Me',
+  successMessage: 'Thank you for contcting me.',
+  errorMessage: 'Sorry we have some problems.',
+  fields:  [
+   { name: 'First Name', type: 'text', isRequired: true , klassName:'first-name-field'},
+   { name: 'Last Name', type: 'text', isRequired: true , klassName:'last-name-field'}
+  ]
+}
+ReactDOM.render(<Form config={config} />, document.getElementById('root'));

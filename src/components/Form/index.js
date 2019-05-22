@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import PropTypes from 'prop-types';
 import axios from 'axios';
+import './styles.css';
 
-const API_PATH = process.env.REACT_APP_API;
-
-class App extends Component {
+/**
+ * @component Form
+ * @props
+ */
+class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,11 +20,11 @@ class App extends Component {
     }
   }
 
-  handleFormSubmit = e => {
+  handleFormSubmit = e => { 
     e.preventDefault();
     axios({
         method: 'post',
-        url: `${API_PATH}`,
+        url: `${process.env.REACT_APP_API}`,
         headers: { 'content-type': 'application/json' },
         data: this.state
       })
@@ -35,9 +38,10 @@ class App extends Component {
   };
 
   render() {
+    const { title, successMessage, errorMessage } = this.props.config;
     return (
       <div className="App">
-          <p>Contact Me</p>
+          <h2>{ title }</h2>
           <div>
             <form action="#">
               <label>First Name</label>
@@ -67,10 +71,10 @@ class App extends Component {
               <input type="submit" onClick = {e => this.handleFormSubmit(e)}  value="Submit" />
               <div> 
                 {this.state.mailSent  &&
-                  <div className="sucsess">Thank you for contcting me.</div>
+                  <div className="sucsess">{ successMessage }</div>
                 }
                 {this.state.error  &&
-                  <div className="error">Sorry we had some problems.</div>
+                  <div className="error">{ errorMessage }</div>
                 }
               </div>
             </form>
@@ -80,4 +84,8 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Form;
+//propTypes for the component
+Form.propTypes = {
+  config: PropTypes.object.isRequired,
+}
