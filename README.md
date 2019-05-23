@@ -1,12 +1,12 @@
-## Contact form React Component.
+## Contact form React Component with PHP mail api.
 
 This is code for tutorial in my blog post [Create Contact form with react and php](https://blog.bitsrc.io/how-to-build-a-contact-form-with-react-js-and-php-d5977c17fec0).
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
-## How to start
+## Usage of complete project.
 
-In the project root directory, Please run:
+Please clone this repo and in the project root directory, Please run:
 
 ### `npm install`
 
@@ -19,6 +19,33 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+
+
+
+## Usage only the component
+
+Please download 'src/components/Form/' folder.
+
+You can use the form component like this  `<Form config={config} />`
+
+####props
+
+`config - object`
+
+Example of config prop
+
+`config = {
+  api: `${process.env.REACT_APP_API}`,
+  title: 'Contact Me',
+  successMessage: 'Thank you for contcting me.',
+  errorMessage: 'Sorry we have some problems.',
+  fields:  [
+   { id: 1, label: 'First Name', type: 'text',placeholder:'Your First Name', isRequired: true , klassName:'first-name-field'},
+   { id: 2, label: 'Last Name', type: 'text', placeholder: 'Your Last Name', isRequired: true , klassName:'last-name-field'},
+   { id: 3, label: 'Email', type: 'email', placeholder: ' Your Email', isRequired: true , klassName:'email-field'},
+   { id: 4, label: 'Message', type: 'textarea',placeholder:'Write something.....', isRequired: true , klassName:'message-field'}
+  ]
+}`
 
 
 <div align="center">
