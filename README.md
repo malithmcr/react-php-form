@@ -35,7 +35,7 @@ You can use the form component like this  `<Form config={config} />`
 Example of config prop
 
 <div align="center">
-    <a href="https://www.paypal.me/craftcode"><img alt="Header" src="/config-obj.svg?raw=true" width="60%"></a>
+    <a href="https://www.paypal.me/craftcode"><img alt="Header" src="/config-obj.png?raw=true" width="60%"></a>
 </div>
 
 
