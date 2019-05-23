@@ -34,18 +34,11 @@ You can use the form component like this  `<Form config={config} />`
 
 Example of config prop
 
-`config = {
-  api: `${process.env.REACT_APP_API}`,
-  title: 'Contact Me',
-  successMessage: 'Thank you for contcting me.',
-  errorMessage: 'Sorry we have some problems.',
-  fields:  [
-   { id: 1, label: 'First Name', type: 'text',placeholder:'Your First Name', isRequired: true , klassName:'first-name-field'},
-   { id: 2, label: 'Last Name', type: 'text', placeholder: 'Your Last Name', isRequired: true , klassName:'last-name-field'},
-   { id: 3, label: 'Email', type: 'email', placeholder: ' Your Email', isRequired: true , klassName:'email-field'},
-   { id: 4, label: 'Message', type: 'textarea',placeholder:'Write something.....', isRequired: true , klassName:'message-field'}
-  ]
-}`
+<iframe
+  src="https://carbon.now.sh/embed/?bg=rgba(171%2C%20184%2C%20195%2C%201)&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=48px&ph=32px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520config%2520%253D%2520%257B%250A%2520%2520api%253A%2520%2560%2524%257Bprocess.env.REACT_APP_API%257D%2560%252C%250A%2520%2520title%253A%2520'Contact%2520Me'%252C%250A%2520%2520successMessage%253A%2520'Thank%2520you%2520for%2520contcting%2520me.'%252C%250A%2520%2520errorMessage%253A%2520'Sorry%2520we%2520have%2520some%2520problems.'%252C%250A%2520%2520fields%253A%2520%2520%255B%250A%2520%2520%2520%257B%2520id%253A%25201%252C%2520label%253A%2520'First%2520Name'%252C%2520type%253A%2520'text'%252C%2520%250A%2520%2520%2520%2520%2520placeholder%253A'Your%2520First%2520Name'%252C%2520isRequired%253A%2520true%2520%252C%2520klassName%253A'first-name-field'%257D%252C%250A%2520%2520%2520%257B%2520id%253A%25202%252C%2520label%253A%2520'Last%2520Name'%252C%2520type%253A%2520'text'%252C%2520%250A%2520%2520%2520%2520%2520placeholder%253A%2520'Your%2520Last%2520Name'%252C%2520isRequired%253A%2520true%2520%252C%2520klassName%253A'last-name-field'%257D%252C%250A%2520%2520%2520%257B%2520id%253A%25203%252C%2520label%253A%2520'Email'%252C%2520type%253A%2520'email'%252C%2520%250A%2520%2520%2520%2520%2520placeholder%253A%2520'%2520Your%2520Email'%252C%2520isRequired%253A%2520true%2520%252C%2520klassName%253A'email-field'%257D%252C%250A%2520%2520%2520%257B%2520id%253A%25204%252C%2520label%253A%2520'Message'%252C%2520type%253A%2520'textarea'%252C%250A%2520%2520%2520%2520%2520placeholder%253A'Write%2520something.....'%252C%2520isRequired%253A%2520true%2520%252C%2520klassName%253A'message-field'%257D%250A%2520%2520%255D%250A%257D"
+  style="transform:scale(0.7); width:1024px; height:473px; border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
 
 
 <div align="center">
