@@ -1,9 +1,16 @@
+## Contact form React Component with PHP mail api.
+
 This is code for tutorial in my blog post [Create Contact form with react and php](https://blog.bitsrc.io/how-to-build-a-contact-form-with-react-js-and-php-d5977c17fec0).
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
-## How to start
+## Usage of complete project.
 
-In the project directory, you can run:
+Please clone this repo and in the project root directory, Please run:
+
+### `npm install`
+
+please go to the root fo the project and run npm install to install all the nessery npm modules.
 
 ### `npm start`
 
@@ -14,13 +21,28 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 
-![Alt text](/screenshot.png?raw=true "Screenshot")
 
+## Usage only the component
+
+Please download 'src/components/Form/' folder.
+
+You can use the form component like this  `<Form config={config} />`
+
+####props
+
+`config - object`
+
+Example of config prop
+
+<div align="center">
+    <a href="https://www.paypal.me/craftcode"><img alt="Header" src="/config-obj.png?raw=true" width="70%"></a>
+</div>
 
 
 <div align="center">
-    <a href="https://www.paypal.me/craftcode"><img alt="Header" src="https://cdn-images-1.medium.com/max/806/1*G95uyokAH4JC5Ppvx4LmoQ.png" width="40%"></a>
+    <a href="https://www.paypal.me/craftcode"><img alt="Header" src="/screenshot.png?raw=true" width="80%"></a>
 </div>
+
 
 ## Contributors
 
@@ -33,3 +55,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+
+<div align="center">
+    <a href="https://www.paypal.me/craftcode"><img alt="Header" src="https://cdn-images-1.medium.com/max/806/1*G95uyokAH4JC5Ppvx4LmoQ.png" width="20%"></a>
+</div>
