@@ -45,26 +45,26 @@ class Form extends React.Component {
         <div>
           <form action="#">
             {fields &&
-              fields.map(fields => {
+              fields.map(field => {
                 return (
-                  <React.Fragment>
-                    {fields.type !== "textarea" ? (
+                  <React.Fragment key={field.id}>
+                    {field.type !== "textarea" ? (
                       <React.Fragment>
-                        <label>{fields.label}</label>
+                        <label>{field.label}</label>
                         <input
-                          type={fields.type}
-                          className={fields.klassName}
-                          placeholder={fields.placeholder}
+                          type={field.type}
+                          className={field.klassName}
+                          placeholder={field.placeholder}
                           value={this.state.fname}
                           onChange={e => this.setState({ fname: e.target.value })}
                         />
                       </React.Fragment>
                     ) : (
                       <React.Fragment>
-                        <label>{fields.label}</label>
+                        <label>{field.label}</label>
                         <textarea
-                          className={fields.klassName}
-                          placeholder={fields.placeholder}
+                          className={field.klassName}
+                          placeholder={field.placeholder}
                           onChange={e => this.setState({ message: e.target.value })}
                           value={this.state.message}
                         />

@@ -9,7 +9,7 @@ if ($_POST){
     // set response code - 200 OK
     http_response_code(200);
     $subject = $_POST['fname'];
-    $to =  "me@malith.pro";
+    $to =  "hey@malith.dev"; //TODO: Please change this before using
     $from = $_POST['email'];
     //data
     $msg = $_POST['number'] . $_POST['message'];       
