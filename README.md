@@ -1,12 +1,10 @@
 ## Contact form React Component with PHP mail api.
 
-# proj-name 
-
 [![version](https://img.shields.io/badge/version-1.0.1-yellow.svg)](https://semver.org)
 
-This is code for tutorial in my blog post [Create Contact form with react and php](https://blog.bitsrc.io/how-to-build-a-contact-form-with-react-js-and-php-d5977c17fec0).
-
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+
+This is the repo for tutorial in my blog post [Create Contact form with react and php](https://blog.bitsrc.io/how-to-build-a-contact-form-with-react-js-and-php-d5977c17fec0).
 
 ## Usage of complete project.
 
