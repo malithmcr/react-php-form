@@ -5,7 +5,7 @@ import "./styles.css";
 
 /**
  * @component Form
- * @props
+ * @props - { object } -  config
  */
 class Form extends React.Component {
   constructor(props) {
@@ -15,7 +15,11 @@ class Form extends React.Component {
       error: null
     };
   }
-
+  /**
+  * @function handleFormSubmit
+  * @param e { obj } - form event
+  * @return void
+  */
   handleFormSubmit = e => {
     e.preventDefault();
     axios({
@@ -36,7 +40,12 @@ class Form extends React.Component {
       })
       .catch(error => this.setState({ error: error.message }));
   };
-
+  /**
+    * @function handleChange
+    * @param e { obj } - change event
+    * @param field { string } - namve of the field
+    * @return void
+    */
   handleChange = (e, field) => {
     let value = e.target.value;
     let updateValue = {};
