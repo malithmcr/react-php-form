@@ -25,11 +25,12 @@ You will also see any lint errors in the console.
 Build this project for production.
 
 
-## Usage only the component
-
+## Using only the component
+If you want to use only the react component without using php api.
 Please download 'src/components/Form/' folder.
 
 You can use the form component like this  `<Form config={config} />`
+
 
 ####props
 
@@ -40,6 +41,23 @@ Example of config prop
 <div align="center">
     <a href="https://www.paypal.me/craftcode"><img alt="Header" src="/config-obj.png?raw=true" width="70%"></a>
 </div>
+
+
+####.env
+
+Make sure change api url in .env file
+
+    $ REACT_APP_API = http://localhost/react-contact-form/api/contact/index.php
+
+change this : http://localhost/react-contact-form/api/contact/index.php
+to whatever you want.
+
+## PHP Settings
+
+Please go to ./api/config.php
+
+and change adminEmail to your email. You will get email to this.
+    $ $adminEmail =  "hey@malith.dev"; 
 
 
 <div align="center">

@@ -11,10 +11,6 @@ class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      fname: "",
-      lname: "",
-      email: "",
-      message: "",
       mailSent: false,
       error: null
     };
@@ -29,23 +25,34 @@ class Form extends React.Component {
       data: this.state
     })
       .then(result => {
-        this.setState({
-          mailSent: result.data.sent
-        });
-        console.log(this.state);
+        if (result.data.sent) {
+          this.setState({
+            mailSent: result.data.sent
+          });
+          this.setState({ error: false });
+        } else {
+          this.setState({ error: true });
+        }
       })
       .catch(error => this.setState({ error: error.message }));
   };
 
+  handleChange = (e, field) => {
+    let value = e.target.value;
+    let updateValue = {};
+    updateValue[field] = value;
+    this.setState(updateValue);
+  };
+
   render() {
-    const { title, successMessage, errorMessage, fields } = this.props.config;
+    const { title, successMessage, errorMessage, fieldsConfig } = this.props.config;
     return (
       <div className="App">
         <h2>{title}</h2>
         <div>
           <form action="#">
-            {fields &&
-              fields.map(field => {
+            {fieldsConfig &&
+              fieldsConfig.map(field => {
                 return (
                   <React.Fragment key={field.id}>
                     {field.type !== "textarea" ? (
@@ -55,19 +62,14 @@ class Form extends React.Component {
                           type={field.type}
                           className={field.klassName}
                           placeholder={field.placeholder}
-                          value={this.state.fname}
-                          onChange={e => this.setState({ fname: e.target.value })}
+                          value={field.name}
+                          onChange={e => this.handleChange(e, field.fieldName)}
                         />
                       </React.Fragment>
                     ) : (
                       <React.Fragment>
                         <label>{field.label}</label>
-                        <textarea
-                          className={field.klassName}
-                          placeholder={field.placeholder}
-                          onChange={e => this.setState({ message: e.target.value })}
-                          value={this.state.message}
-                        />
+                        <textarea className={field.klassName} placeholder={field.placeholder} onChange={e => this.handleChange(e, field.fieldName)} value={field.name} />
                       </React.Fragment>
                     )}
                   </React.Fragment>
