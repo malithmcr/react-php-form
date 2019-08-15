@@ -34,7 +34,7 @@ Please download 'src/components/Form/' folder.
 You can use the form component like this  `<Form config={config} />`
 
 
-####props
+#### props
 
 `config - object`
 
@@ -45,7 +45,7 @@ Example of config prop
 </div>
 
 
-####.env
+#### .env
 
 Make sure change api url in .env file
 
