@@ -1,6 +1,7 @@
 {
   "name": "react-contact-form",
   "version": "1.0.1",
+  "homepage": "https://malithmcr.github.io/react-php-contact-form/",
   "private": true,
   "dependencies": {
     "react": "^16.11.0",

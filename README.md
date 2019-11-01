@@ -34,6 +34,15 @@ Please download 'src/components/Form/' folder.
 You can use the form component like this  `<Form config={config} />`
 
 
+## Run PHP API with docker
+First you need docker installed in you machine. Once you have docker installed please 
+navigate to root folder from your terminal and run:
+
+`docker-compose up -d`
+
+Api will run in localhost:8080
+
+
 #### props
 
 `config - object`
