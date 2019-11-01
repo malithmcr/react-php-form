@@ -1,5 +1,7 @@
 ## Contact form React Component with PHP mail api.
 
+https://travis-ci.org/malithmcr/react-php-contact-form.svg?branch=master
+
 [![version](https://img.shields.io/badge/version-1.0.1-yellow.svg)](https://semver.org)
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
