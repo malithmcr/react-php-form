@@ -7,9 +7,9 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "prop-types": "^15.7.2",
-    "react-scripts": "2.1.1"
+    "react-scripts": "^3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
