@@ -59,7 +59,7 @@ to whatever you want.
 Please go to ./api/config.php
 
 and change adminEmail to your email. You will get email to this.
-    $ $adminEmail =  "hey@malith.dev"; 
+     $adminEmail =  "hey@malith.dev"; 
 
 
 <div align="center">
