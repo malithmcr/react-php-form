@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-php-contact-form/static/css/main.54644518.chunk.css",
+    "main.js": "/react-php-contact-form/static/js/main.a50129ab.chunk.js",
+    "main.js.map": "/react-php-contact-form/static/js/main.a50129ab.chunk.js.map",
+    "runtime-main.js": "/react-php-contact-form/static/js/runtime-main.0c376433.js",
+    "runtime-main.js.map": "/react-php-contact-form/static/js/runtime-main.0c376433.js.map",
+    "static/js/2.6c357196.chunk.js": "/react-php-contact-form/static/js/2.6c357196.chunk.js",
+    "static/js/2.6c357196.chunk.js.map": "/react-php-contact-form/static/js/2.6c357196.chunk.js.map",
+    "index.html": "/react-php-contact-form/index.html",
+    "precache-manifest.85af80299a833bdb720ed03b1374159e.js": "/react-php-contact-form/precache-manifest.85af80299a833bdb720ed03b1374159e.js",
+    "service-worker.js": "/react-php-contact-form/service-worker.js",
+    "static/css/main.54644518.chunk.css.map": "/react-php-contact-form/static/css/main.54644518.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c376433.js",
+    "static/js/2.6c357196.chunk.js",
+    "static/css/main.54644518.chunk.css",
+    "static/js/main.a50129ab.chunk.js"
+  ]
+}
