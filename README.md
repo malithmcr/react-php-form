@@ -49,10 +49,15 @@ Api will run in localhost:8080
 
 `config - object`
 
-Example of config prop
+Example of config prop:
 
 <div align="center">
     <a href="https://www.paypal.me/craftcode"><img alt="Header" src="/config-obj.png?raw=true" width="70%"></a>
+</div>
+
+Watch the Video: 
+<div align="center">
+    <a href="https://www.youtube.com/watch?v=_f16vyORzJ8"><img alt="Header" src="https://img.youtube.com/vi/_f16vyORzJ8/0.jpg" width="70%"></a>
 </div>
 
 
@@ -62,8 +67,7 @@ Make sure change api url in .env file
 
     $ REACT_APP_API = http://localhost/react-contact-form/api/contact/index.php
 
-change this : http://localhost/react-contact-form/api/contact/index.php
-to whatever you want.
+Change this : http://localhost/react-contact-form/api/contact/index.php to whatever you want.
 
 ## PHP Settings
 
