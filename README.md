@@ -12,9 +12,19 @@ This is the repo for tutorial in my blog post [Create Contact form with react an
 
 Please clone this repo and in the project root directory, Please run:
 
+`docker-compose up -d`
+
+ "If this command doesn't work, You will need to install docker first "
+
+Frontend will run in localhost
+Api will run in localhost:8080
+
+
+Old way ( If you want to run without docker): 
+
 ### `npm install`
 
-please go to the root fo the project and run npm install to install all the nessery npm modules.
+please go to the /app folder and run npm install to install all the nessery npm modules.
 
 ### `npm start`
 

@@ -16,7 +16,15 @@ services:
             - ./api:/api
         networks:
             - code-network
-
+    app:
+        build:
+            context: ./app/
+        command: npm start
+        volumes:
+            - ./app/:/usr/app
+            - /usr/app/node_modules
+        ports:
+            - "3000:3000"
 networks:
     code-network:
         driver: bridge
