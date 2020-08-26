@@ -15,11 +15,21 @@
         "test",
         "code"
       ]
+    },
+    {
+      "login": "bretwadleigh",
+      "name": "Bret Wadleigh",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/923404?v=4",
+      "profile": "http://bretwadleigh.net",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "react-php-contact-form",
   "projectOwner": "malithmcr",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
