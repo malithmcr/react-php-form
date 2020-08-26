@@ -1,8 +1,33 @@
 * {box-sizing: border-box;}
 
-.App {
-  max-width: 420px;
-  margin: 0 auto;
+.contact-form {
+  max-width: 510px;
+  margin: 30px auto;
+}
+
+.contact-form__container {
+  border: 1px solid #f5f5f5;
+  padding: 35px;
+  box-shadow: 2px 2px 10px 0 #f5f5f5;
+}
+.contact-form__container p{
+  margin: 0;
+  text-align: left;
+}
+.contact-form__header h2{
+  color: #4a4a4a;
+}
+.contact-form__header p{
+  margin-bottom: 0;
+  color: #4a4a4a;
+  color: #311c56;
+}
+.contact-form__header{
+  background: #f7f7f7;
+  padding: 2px 35px 31px;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 p {
   text-align: center;
@@ -21,16 +46,19 @@ input[type=text],input[type=email], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #311c56;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
 }
-
+textarea{
+  height: 140px;
+}
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #140c23;
 }
 
 .container {
