@@ -14,8 +14,9 @@ import Form from '../src/components/Form';
 const config = {
   api: `${process.env.REACT_APP_API}`,
   title: 'Contact Me',
+  description: 'Write us about your request, We\'ll get back to you within 24 hours.',
   successMessage: 'Thank you for contcting me.',
-  errorMessage: 'Sorry we have some problems.',
+  errorMessage: 'Please Fill the complete form',
   fields:{
     firstName: '',
     lastName: '',

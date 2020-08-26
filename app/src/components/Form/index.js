@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 import "./styles.css";
@@ -7,38 +7,33 @@ import "./styles.css";
  * @component Form
  * @props - { object } -  config
  */
-class Form extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mailSent: false,
-      error: null
-    };
-  }
+const Form = (props) => {
+  const [mailSent, setmailSent] = useState(false);
+  const [error, setError] = useState(null);
+  const [formData, setFormData] = useState({});
+ 
   /**
   * @function handleFormSubmit
   * @param e { obj } - form event
   * @return void
   */
-  handleFormSubmit = e => {
+  const handleFormSubmit = e => {
     e.preventDefault();
     axios({
       method: "post",
       url: `${process.env.REACT_APP_API}`,
       headers: { "content-type": "application/json" },
-      data: this.state
+      data: formData
     })
       .then(result => {
         if (result.data.sent) {
-          this.setState({
-            mailSent: result.data.sent
-          });
-          this.setState({ error: false });
+          setmailSent(result.data.sent)
+          setError(false)
         } else {
-          this.setState({ error: true });
+          setError(true)
         }
       })
-      .catch(error => this.setState({ error: error.message }));
+      .catch(error => setError( error.message ));
   };
   /**
     * @function handleChange
@@ -46,18 +41,22 @@ class Form extends React.Component {
     * @param field { string } - namve of the field
     * @return void
     */
-  handleChange = (e, field) => {
+   const handleChange = (e, field) => {
     let value = e.target.value;
-    let updateValue = {};
-    updateValue[field] = value;
-    this.setState(updateValue);
+    setFormData({
+      ...formData,
+      [field]: value,
+    });
   };
 
-  render() {
-    const { title, successMessage, errorMessage, fieldsConfig } = this.props.config;
+    const { title,description, successMessage, errorMessage, fieldsConfig } = props.config;
     return (
-      <div className="App">
-        <h2>{title}</h2>
+      <div className="contact-form">
+        <div className="contact-form__header">
+            <h2>{title}</h2>
+            <p>{description}</p>
+        </div>
+      <div className="contact-form__container">
         <div>
           <form action="#">
             {fieldsConfig &&
@@ -72,28 +71,28 @@ class Form extends React.Component {
                           className={field.klassName}
                           placeholder={field.placeholder}
                           value={field.name}
-                          onChange={e => this.handleChange(e, field.fieldName)}
+                          onChange={e => handleChange(e, field.fieldName)}
                         />
                       </React.Fragment>
                     ) : (
                       <React.Fragment>
                         <label>{field.label}</label>
-                        <textarea className={field.klassName} placeholder={field.placeholder} onChange={e => this.handleChange(e, field.fieldName)} value={field.name} />
+                        <textarea className={field.klassName} placeholder={field.placeholder} onChange={e => handleChange(e, field.fieldName)} value={field.name} />
                       </React.Fragment>
                     )}
                   </React.Fragment>
                 );
               })}
-            <input type="submit" onClick={e => this.handleFormSubmit(e)} value="Submit" />
+            <input type="submit" onClick={e => handleFormSubmit(e)} value="Submit" />
             <div>
-              {this.state.mailSent && <div className="sucsess">{successMessage}</div>}
-              {this.state.error && <div className="error">{errorMessage}</div>}
+              {mailSent && <div className="sucsess">{successMessage}</div>}
+              {error && <div className="error">{errorMessage}</div>}
             </div>
           </form>
         </div>
+        </div>
       </div>
     );
-  }
 }
 
 export default Form;
