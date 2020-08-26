@@ -24,6 +24,15 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "hans2103",
+      "name": "Hans Kuijpers",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/639822?v=4",
+      "profile": "https://hkweb.nl",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
