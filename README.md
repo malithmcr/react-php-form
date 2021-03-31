@@ -101,14 +101,16 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://craftcode.design/"><img src="https://avatars3.githubusercontent.com/u/4549859?v=4" width="100px;" alt=""/><br /><sub><b>Malith Priyashan</b></sub></a><br /><a href="#infra-malithmcr" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/malithmcr/react-php-contact-form/commits?author=malithmcr" title="Tests">⚠️</a> <a href="https://github.com/malithmcr/react-php-contact-form/commits?author=malithmcr" title="Code">💻</a></td>
-    <td align="center"><a href="http://bretwadleigh.net"><img src="https://avatars3.githubusercontent.com/u/923404?v=4" width="100px;" alt=""/><br /><sub><b>Bret Wadleigh</b></sub></a><br /><a href="#maintenance-bretwadleigh" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://hkweb.nl"><img src="https://avatars2.githubusercontent.com/u/639822?v=4" width="100px;" alt=""/><br /><sub><b>Hans Kuijpers</b></sub></a><br /><a href="https://github.com/malithmcr/react-php-contact-form/commits?author=hans2103" title="Code">💻</a></td>
+    <td align="center"><a href="https://craftcode.design/"><img src="https://avatars3.githubusercontent.com/u/4549859?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Malith Priyashan</b></sub></a><br /><a href="#infra-malithmcr" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/malithmcr/react-php-contact-form/commits?author=malithmcr" title="Tests">⚠️</a> <a href="https://github.com/malithmcr/react-php-contact-form/commits?author=malithmcr" title="Code">💻</a></td>
+    <td align="center"><a href="http://bretwadleigh.net"><img src="https://avatars3.githubusercontent.com/u/923404?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bret Wadleigh</b></sub></a><br /><a href="#maintenance-bretwadleigh" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://hkweb.nl"><img src="https://avatars2.githubusercontent.com/u/639822?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hans Kuijpers</b></sub></a><br /><a href="https://github.com/malithmcr/react-php-contact-form/commits?author=hans2103" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/cscheerio"><img src="https://avatars.githubusercontent.com/u/49214389?v=4?s=100" width="100px;" alt=""/><br /><sub><b>cscheerio</b></sub></a><br /><a href="#maintenance-cscheerio" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
