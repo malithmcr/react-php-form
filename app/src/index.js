@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Form from '../src/components/Form';
 
 /**
- * @config prepareing config prop.
+ * @config preparing config prop.
  * api: url for the server endpoint
  * title: form title
  * successMessage: message will show in the UI when mail is successfully sent.
@@ -15,8 +15,8 @@ const config = {
   api: `${process.env.REACT_APP_API}`,
   title: 'Contact Me',
   description: 'Write us about your request, We\'ll get back to you within 24 hours.',
-  successMessage: 'Thank you for contcting me.',
-  errorMessage: 'Please Fill the complete form',
+  successMessage: 'Thank you for contacting me.',
+  errorMessage: 'Please fill the complete form',
   fields:{
     firstName: '',
     lastName: '',
