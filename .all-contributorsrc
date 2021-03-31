@@ -33,6 +33,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "cscheerio",
+      "name": "cscheerio",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49214389?v=4",
+      "profile": "https://github.com/cscheerio",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
