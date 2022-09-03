@@ -10,7 +10,7 @@
   "devDependencies": {
     "axios": "^0.21.2",
     "prop-types": "^15.7.2",
-    "react-scripts": "^3.2.0"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
